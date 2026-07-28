@@ -8,6 +8,7 @@ he stuck to a problem in which he has given a long integer ‘X’ and had to co
 Ninja called you for help as you are his only friend. Help him to solve the problem.
 '''
 from math import *
+# method 1
 
 def countDigit(n: int) -> int:
    # Write your code here.
@@ -22,3 +23,8 @@ def countDigit(n: int) -> int:
       num = num // 10
 
    return count
+
+# method 2
+
+def countDigit(n: int) -> int:
+   return int(log10(n) + 1)
